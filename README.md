@@ -1,2 +1,2 @@
-# Guia De Segurança
-# Guia para proteger as suas contas.
+# Guia Para proteger as suas contas.
+# Código Aberto + LocalHost Abrir o index.html
