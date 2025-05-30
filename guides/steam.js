@@ -1,7 +1,7 @@
 let currentPageUrl = window.location.pathname
 currentPageUrl = currentPageUrl.substring(1, currentPageUrl.lastIndexOf('/'))
 
-const redirectPage = currentPageUrl + '/steamid.html'
+const redirectPage = currentPageUrl + 'steamid.html'
 window.steps = [
     {
         "points": [
