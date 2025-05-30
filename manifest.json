@@ -1,0 +1,13 @@
+{
+    "short_name": "Guia de Segurança",
+    "name": "Guia de Segurança, Segurança da conta",
+    "icons": [
+        {
+            "src": "./favicon.ico",
+            "sizes": "27x32",
+            "type": "image/png"
+        }
+    ],
+    "start_url": "/",
+    "display": "standalone"
+}
