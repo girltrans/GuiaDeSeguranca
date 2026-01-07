@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="Guia De Segurança">
+    <meta name="application-name" content="Guia De Segurança">
+
+    <title>Guia De Segurança Discord</title>
+    <meta name="title" content="Guia De Segurança Discord" />
+    <meta name="description" content="Um guia de segurança da conta Discord. Obtenha uma melhor segurança de conta para garantir que as suas contas não são roubadas!" />
+    <meta name="theme-color" content="#000000" />
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://guiadeseguranca.vercel.app" />
+    <meta property="og:image" content="./icons/discord.png" />
+    <meta property="og:title" content="Guia De Segurança Discord" />
+    <meta property="og:site_name" content="Guia De Segurança Discord" />
+    <meta property="og:description" content="Um guia de segurança da conta Discord. Obtenha uma melhor segurança de conta para garantir que as suas contas não são roubadas!" />
+
+    <meta property="twitter:url" content="https://guiadeseguranca.vercel.app" />
+    <meta property="twitter:title" content="Guia De Segurança Discord" />
+    <meta property="twitter:description" content="Um guia de segurança da conta Discord. Obtenha uma melhor segurança de conta para garantir que as suas contas não são roubadas!" />
+    <meta property="twitter:image" content="./icons/discord.png" />
+
+    <link rel="preload stylesheet" href="./css/style.css" as="style">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=block" rel="stylesheet">
+    <link rel="manifest" href="/manifest.json">
+
+    <link rel="icon" href="./favicon.ico">
+    <link rel="apple-touch-icon" href="./favicon.ico">
+
+    <script src="./guia/discord.js"></script>
+    <script src="./js/generate.js" defer></script>
+    <script>window.addEventListener("load",()=>document.body.classList.remove("preload"))</script>
+</head>
+
+<body class="preload">
+    <a rel="nofollow" href="https://github.com/girltrans" target="_blank" title="GitHub Repositório"
+        class="github"><img src="./icons/github.png" alt="GitHub Icon" title="GitHub"></a>
+    <div class="container">
+        <h1><a href="./index.html">Guia De Segurança</a><i>/Discord</i></h1>
+        <div class="info discord">
+            <img src="./icons/discord.png" width="48" alt="Discord Icon" title="Discord" />
+            <ul id="list">
+            </ul>
+        </div>
+        <div class="paginate">
+            <a id="prevEl" href="javascript:prevPage()" disabled><</a>
+            <p id="stepDisplay">Etapa 1 of 1</p>
+            <a id="nextEl" href="javascript:nextPage()">></a>
+        </div>
+    </div>
+<script>
+    if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+            navigator.serviceWorker.register('./sw.js')
+                .then(registration => {
+                    console.log('ServiceWorker Registrado Com Sucesso: (Este Serviço Não Funciona Em LocalHost)', registration.scope);
+                })
+                .catch(error => {
+                    console.log('Falha Ao Registrar o ServiceWorker: (Este Serviço Não Funciona Em LocalHost)', error);
+                });
+        });
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="Guia De Segurança Kick">
+    <meta name="application-name" content="Guia De Segurança Kick">
+
+    <title>Guia De Segurança Kick</title>
+    <meta name="title" content="Guia De Segurança Kick">
+    <meta name="description" content="Um guia de segurança de contas Kick. Obtenha uma melhor segurança de conta para garantir que as suas contas não sejam roubadas!">
+    <meta name="theme-color" content="#000000">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://guiadeseguranca.vercel.app">
+    <meta property="og:image" content="./icons/kick.png">
+    <meta property="og:title" content="Guia De Segurança Kick">
+    <meta property="og:site_name" content="Guia De Segurança">
+    <meta property="og:description" content="Um guia de segurança de contas Kick. Obtenha uma melhor segurança de conta para garantir que as suas contas não sejam roubadas!">
+
+    <meta property="twitter:url" content="https://guiadeseguranca.vercel.app">
+    <meta property="twitter:title" content="Guia De Segurança Kick">
+    <meta property="twitter:description" content="Um guia de segurança de contas Kick. Obtenha uma melhor segurança de conta para garantir que as suas contas não sejam roubadas!">
+    <meta property="twitter:image" content="./icons/kick.png">
+    <link rel="preload" as="image" href="./icons/github.png">
+    <link rel="preload" as="image" href="./icons/kick.png">
+    <link rel="preload stylesheet" href="./css/style.css" as="style">
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=block" rel="stylesheet">
+    <link rel="manifest" href="./manifest.json">
+
+    <link rel="icon" href="./favicon.ico">
+    <link rel="apple-touch-icon" href="./favicon.ico">
+    <link rel="prerender" href="https://guiadeseguranca.vercel.app">
+
+    <script src="./guia/kick.js"></script>
+    <script src="./js/generate.js" defer></script>
+    <script>window.addEventListener("load",()=>document.body.classList.remove("preload"))</script>
+</head>
+<body class="preload">
+    <a rel="nofollow" href="https://github.com/girltrans" target="_blank" title="GitHub Repositório"
+        class="github"><img src="./icons/github.png" alt="GitHub Icon" title="GitHub"></a>
+    <div class="container">
+        <h1><a href="./index.html">Guia De Segurança</a><i>/Kick</i></h1>
+        <div class="info kick">
+            <img src="./icons/kick.png" width="48" alt="kick Icon" title="kick">
+            <ul id="list">
+            </ul>
+        </div>
+        <div class="paginate">
+            <a id="prevEl" href="javascript:prevPage()" disabled><</a>
+            <p id="stepDisplay">Etapa 1 of 1</p>
+            <a id="nextEl" href="javascript:nextPage()">></a>
+        </div>
+    </div>
+<script>
+    if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+            navigator.serviceWorker.register('./sw.js')
+                .then(registration => {
+                    console.log('ServiceWorker Registrado Com Sucesso: (Este Serviço Não Funciona Em LocalHost)', registration.scope);
+                })
+                .catch(error => {
+                    console.log('Falha Ao Registrar o ServiceWorker: (Este Serviço Não Funciona Em LocalHost)', error);
+                });
+        });
+    }
+</script>
+</body>
+</html>

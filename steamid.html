@@ -1,0 +1,71 @@
+<html dir="ltr" lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="Guia De Segurança Verificar Steam ID">
+    <meta name="application-name" content="Guia De Segurança Verificar Steam ID">
+
+    <title>Guia De Segurança Verificar Steam ID</title>
+    <meta name="title" content="Guia De Segurança Verificar Steam ID" />
+    <meta name="description" content="Encontra o seu Steam ID (SteamID64) em https://verificarsteamid.vercel.app Obtenha uma melhor segurança de conta para garantir que as suas contas não sejam roubadas!" />
+    <meta name="theme-color" content="#000000" />
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://verificarsteamid.vercel.app" />
+    <meta property="og:image" content="./icons/steam.png" />
+    <meta property="og:title" content="Guia De Segurança Verificar Steam ID" />
+    <meta property="og:site_name" content="Guia De Segurança" />
+    <meta property="og:description" content="Encontra o seu Steam ID (SteamID64) em https://verificarsteamid.vercel.app Obtenha uma melhor segurança de conta para garantir que as suas contas não sejam roubadas!" />
+
+    <meta property="twitter:url" content="https://verificarsteamid.vercel.app" />
+    <meta property="twitter:title" content="Guia De Segurança Verificar Steam ID" />
+    <meta property="twitter:description" content="Encontra o seu Steam ID (SteamID64) em https://verificarsteamid.vercel.app Obtenha uma melhor segurança de conta para garantir que as suas contas não sejam roubadas!" />
+    <meta property="twitter:image" content="./icons/steam.png" />
+
+    <link rel="preload stylesheet" href="./css2/style.css" as="style">
+    <link rel="preconnect" href="https://verificarsteamid.vercel.app">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=block" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tippy.js/6.3.7/animations/shift-away.css" />
+    <link rel="manifest" href="./manifest.json">
+
+    <link rel="icon" href="./favicon.ico">
+    <link rel="apple-touch-icon" href="./favicon.ico">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.8/umd/popper.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tippy.js/6.3.7/tippy.umd.min.js" crossorigin="anonymous"></script>
+    <script type="module" crossorigin="anonymous" src="https://autenticacaode2fatores.vercel.app/js/rolling-number.js"></script>
+    <script src="./js/steamid.js" defer></script>
+    <script>window.addEventListener("load",()=>document.body.classList.remove("preload"))</script>
+</head>
+
+<body class="preload">
+    <a rel="nofollow" href="https://github.com/girltrans" target="_blank" title="GitHub Repositório"
+        class="github"><img src="./icons/github.png" alt="GitHub Icon" title="GitHub"></a>
+    <div class="container">
+        <h1><a href="./index.html">Guia De Segurança</a><i>/Verificar Steam ID</i></h1>
+        <div class="steamOuter">
+            <input type="text" autocomplete="off" id="vanity" placeholder="cole aqui o seu identificador personalizado">
+            <layflags-rolling-number data-minimum="17" id="steamid">00000000000000000</layflags-rolling-number>
+            <p>Steam ID / clique para copiar</b></p>
+        </div>
+    </div>
+<script>
+    if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+            navigator.serviceWorker.register('./sw.js')
+                .then(registration => {
+                    console.log('ServiceWorker Registrado Com Sucesso: (Este Serviço Não Funciona Em LocalHost)', registration.scope);
+                })
+                .catch(error => {
+                    console.log('Falha Ao Registrar o ServiceWorker: (Este Serviço Não Funciona Em LocalHost)', error);
+                });
+        });
+    }
+</script>
+</body>
+</html>
