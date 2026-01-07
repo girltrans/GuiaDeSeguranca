@@ -1,0 +1,13 @@
+{
+    "short_name": "Gerar Senha",
+    "name": "Gerar Senha",
+    "icons": [
+        {
+            "src": "./favicon.ico",
+            "sizes": "27x32",
+            "type": "image/png"
+        }
+    ],
+    "start_url": "/",
+    "display": "standalone"
+}
