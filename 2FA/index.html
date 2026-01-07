@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html dir="ltr" lang="en-US">
-
+<html dir="ltr" lang="pt-BR">
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -12,19 +11,21 @@
     <title>Autenticação De 2 Fatores</title>
     <meta name="title" content="Autenticação de 2 Fatores" />
     <meta name="description" content="Código Aberto Autenticação de 2 Fatores (Senha única baseada no tempo) Visualizador. Suporta todas as plataformas 2FA (Microsoft, Discord, Minecraft, Twitter, etc.)" />
+	<meta content="https://autenticacaode2fatores.vercel.app" property="og:url"/>
+	<meta content="https://autenticacaode2fatores.vercel.app/images/autenticacaode2fatores.png" property="og:image"/>
     <meta name="theme-color" content="#000000" />
 
     <meta property="og:type" content="website">
-    <meta property="og:url" content="index.html" />
-    <meta property="og:image" content="icons/2fa.png" />
+    <meta property="og:url" content="https://autenticacaode2fatores.vercel.app" />
+    <meta property="og:image" content="https://autenticacaode2fatores.vercel.app/images/autenticacaode2fatores.png" />
     <meta property="og:title" content="Autenticação De 2 Fatores" />
     <meta property="og:site_name" content="Autenticação De 2 Fatores" />
     <meta property="og:description" content="Código Aberto Autenticação de 2 Fatores (Senha única baseada no tempo) Visualizador. Suporta todas as plataformas 2FA (Microsoft, Discord, Minecraft, Twitter, etc.)" />
 
-    <meta property="twitter:url" content="index.html" />
+    <meta property="twitter:url" content="https://autenticacaode2fatores.vercel.app" />
     <meta property="twitter:title" content="Autenticação De 2 Fatores" />
     <meta property="twitter:description" content="Código Aberto Autenticação de 2 Fatores (Senha única baseada no tempo) Visualizador. Suporta todas as plataformas 2FA (Microsoft, Discord, Minecraft, Twitter, etc.)" />
-    <meta property="twitter:image" content="icons/2fa.png" />
+    <meta property="twitter:image" content="https://autenticacaode2fatores.vercel.app/images/autenticacaode2fatores.png" />
 
     <link rel="preload stylesheet" href="./css/style.css" as="style">
     <link rel="preconnect" href="https://cdnjs.cloudflare.com">
@@ -224,6 +225,7 @@
             }
         }
 
+        // WEB COMPONENT
 
         const INTERNAL = Symbol("INTERNAL");
 
@@ -302,5 +304,4 @@
     <script src="./js/totp.js" defer></script>
     <script>window.addEventListener("load",()=>document.body.classList.remove("preload"))</script>
 </body>
-
 </html>
