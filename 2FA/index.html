@@ -56,7 +56,6 @@
         <p>clique para copiar / expira em: <b id="updatingIn">30</b></p>
     </div>
     <script type="module">
-        // HELPER
 
         window.hasRolledInt = false;
 
@@ -94,7 +93,6 @@
             return num.length;
         }
 
-        // STYLES
 
         function renderStyles() {
             return html`
@@ -152,7 +150,6 @@
             `;
         }
 
-        // RENDER HELPER
 
         function renderDigit(value, index) {
             return html`
@@ -227,7 +224,6 @@
             }
         }
 
-        // WEB COMPONENT
 
         const INTERNAL = Symbol("INTERNAL");
 
